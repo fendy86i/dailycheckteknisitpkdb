@@ -38,11 +38,7 @@ function localISO(d){
 const today = new Date();
 today.setHours(0,0,0,0);
 
-// Set the dashboard to start specifically on Jan 21, 2026
-// Note: Months are 0-indexed in JS (0 = Jan, 1 = Feb, etc.)
-let startDate = new Date(2026, 0, 21); 
-startDate.setHours(0,0,0,0);
-
+let startDate = new Date(today);
 let cachedData = [];
 let originalOrder = [];
 let dateWindow = [];
